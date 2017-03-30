@@ -51,7 +51,7 @@ public class GamePanel extends JPanel implements Runnable{
 		objectManager.addObject(player);		//1명추가
 		
 		//패널과 키보드 리스너 연결
-		this.addKeyListener(new Keyboard(player));	//그냥 이렇게 했을경우 포커스는 패널이 아닌 윈도우에 가 있기 때문에 키 리스너가 먹지 않는다.
+		this.addKeyListener(new Keyboard(player));	//그냥 이것만 했을경우 포커스는 패널이 아닌 윈도우에 가 있기 때문에 키 리스너가 먹지 않는다.
 		
 		//적군등장
 		Random r = new Random();		//랜덤값 메서드
